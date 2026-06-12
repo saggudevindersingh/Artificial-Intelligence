@@ -22,6 +22,7 @@ Prompt Engineering:
 Types:
  a. Zero Shot Prompting = Do not provide context just question. Cost effective in large companies as use less number of tokens.
  b. Few Shot Prompting = Here we give input and output examples before sending instructions to the model.
+ c. Chain of Thougth Prompting = Reasoning models. For instance, Chat GPT 5
 
 --- Key Points ---
 1. System Prompt is like context to model. How to response for the input.
