@@ -1,0 +1,27 @@
+Resourcce -> created based on Azure Foundary Service
+
+Azure AI Foundry Models:
+1. provided by Microsoft and Other models
+2. can perfrom side-by-side evaluation of models
+3. Once you choose model, can deploy model accordingly.
+4. In order to use model, need to delpoy the model.
+
+Model Deployment:
+1. Depends on data residency needs, call volume and capacity.
+2. Two main types - Standard and Provisioned 
+   -> Global standard/provisioned = leverage Azure's global infrastructure, for lower latency consider using SKU
+   -> DataZone standard/provisioned = particular DataZone, to get lower latency has provision option available
+
+Model Parameters:
+1. Temperature = 0 to 1. More diverse and creative repsones
+2. Top P = 0 to 1. More consistent response.
+3. Max Tokens = Determines the length of model response.
+
+Prompt Engineering:
+1. clear and concise
+Types:
+ a. Zero Shot Prompting = Do not provide context just question. Cost effective in large companies as use less number of tokens.
+ b. Few Shot Prompting = Here we give input and output examples before sending instructions to the model.
+
+--- Key Points ---
+1. System Prompt is like context to model. How to response for the input.
