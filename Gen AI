@@ -17,12 +17,43 @@ Model Parameters:
 2. Top P = 0 to 1. More consistent response.
 3. Max Tokens = Determines the length of model response.
 
-Prompt Engineering:
+---- Prompt Engineering ----
 1. clear and concise
 Types:
  a. Zero Shot Prompting = Do not provide context just question. Cost effective in large companies as use less number of tokens.
  b. Few Shot Prompting = Here we give input and output examples before sending instructions to the model.
  c. Chain of Thougth Prompting = Reasoning models. For instance, Chat GPT 5
 
+ ---- Fine Tuning ---
+ a. Fine TUne existing LLM model using custom data set. It will reduce resource overhead.
+  a.1 Supervied FT = Here, you provide custom data. The customized data already has existing prompts and their completion.
+  a.2 Re-inforcement FT = Here the interative feedback loop is used to fine tune the model. It improves the reasoning the model.
+  a.3 Direct Preference Optimization = Lighter and faster technique available when it comes to fine tuning. Based on human preferences.
+
+---- Azure AI Content Safety ----
+1. To detect harmful user and AI generated content.
+2. To detect and prevent the output of harmful content.
+
+Features:
+1. can scan and moderate text.
+2. Can detect if responses are grounded as per the intended material.
+3. Prompt Shileds- Prevents Jailbreak attacks wherein users try to bypass the safety protocols of the model.
+4. can identify protected text such as song lyrics, articles etc.
+5. Detect code segments that may come from public repository.
+6. Prompt shields- Indirect attacks - This could involve hidden attacks, Cross - Domain injection attacks.
+
+Harm Categories:
+1. Hate and Fairness = can detect attack or discriminatory language to people.
+2. Sexual = 
+3. Violence
+4. Self-Harm
+
+---- BLockList ----
+
+
 --- Key Points ---
 1. System Prompt is like context to model. How to response for the input.
+2. LLM model can give you multiple responses.
+3. Monitor the model usage for cost tracking purpose.
+4. Azure BLOB (Data Lake) to store the data. Azure Search to search the data inside BLOB. Instead of text based search, vector based search is performed here.
+5. Invoke WebRequest (Windows PowerShell) = curl (Linux or Mac OS)
